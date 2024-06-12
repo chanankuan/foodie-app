@@ -5,8 +5,10 @@ const dummyMeals = [
   {
     title: 'Juicy Cheese Burger',
     slug: 'juicy-cheese-burger',
-    image: '/images/burger.jpg',
-    summary: 'A mouth-watering burger with a juicy beef patty and melted cheese, served in a soft bun.',
+    image:
+      'https://lu4zqq7exwahqzug.public.blob.vercel-storage.com/burger-4lbImMp2S42EcEiJkQTbQ2KMlSFvac.jpg',
+    summary:
+      'A mouth-watering burger with a juicy beef patty and melted cheese, served in a soft bun.',
     instructions: `
       1. Prepare the patty:
          Mix 200g of ground beef with salt and pepper. Form into a patty.
@@ -26,8 +28,10 @@ const dummyMeals = [
   {
     title: 'Spicy Curry',
     slug: 'spicy-curry',
-    image: '/images/curry.jpg',
-    summary: 'A rich and spicy curry, infused with exotic spices and creamy coconut milk.',
+    image:
+      'https://lu4zqq7exwahqzug.public.blob.vercel-storage.com/curry-li7STMdgscnqzzChBV1Q4EgCMx1Rkt.jpg',
+    summary:
+      'A rich and spicy curry, infused with exotic spices and creamy coconut milk.',
     instructions: `
       1. Chop vegetables:
          Cut your choice of vegetables into bite-sized pieces.
@@ -50,8 +54,10 @@ const dummyMeals = [
   {
     title: 'Homemade Dumplings',
     slug: 'homemade-dumplings',
-    image: '/images/dumplings.jpg',
-    summary: 'Tender dumplings filled with savory meat and vegetables, steamed to perfection.',
+    image:
+      'https://lu4zqq7exwahqzug.public.blob.vercel-storage.com/dumplings-658hqnohT5aiu7ErDztJOqJ0jEIeFG.jpg',
+    summary:
+      'Tender dumplings filled with savory meat and vegetables, steamed to perfection.',
     instructions: `
       1. Prepare the filling:
          Mix minced meat, shredded vegetables, and spices.
@@ -71,8 +77,10 @@ const dummyMeals = [
   {
     title: 'Classic Mac n Cheese',
     slug: 'classic-mac-n-cheese',
-    image: '/images/macncheese.jpg',
-    summary: "Creamy and cheesy macaroni, a comforting classic that's always a crowd-pleaser.",
+    image:
+      'https://lu4zqq7exwahqzug.public.blob.vercel-storage.com/macncheese-vrhOg2L4AkGGiWQ4IkPhIGBDfKQmQZ.jpg',
+    summary:
+      "Creamy and cheesy macaroni, a comforting classic that's always a crowd-pleaser.",
     instructions: `
       1. Cook the macaroni:
          Boil macaroni according to package instructions until al dente.
@@ -95,8 +103,10 @@ const dummyMeals = [
   {
     title: 'Authentic Pizza',
     slug: 'authentic-pizza',
-    image: '/images/pizza.jpg',
-    summary: 'Hand-tossed pizza with a tangy tomato sauce, fresh toppings, and melted cheese.',
+    image:
+      'https://lu4zqq7exwahqzug.public.blob.vercel-storage.com/pizza-wOF3gMSt97A3tUnvgMdaCnsxR4IRxx.jpg',
+    summary:
+      'Hand-tossed pizza with a tangy tomato sauce, fresh toppings, and melted cheese.',
     instructions: `
       1. Prepare the dough:
          Knead pizza dough and let it rise until doubled in size.
@@ -116,8 +126,10 @@ const dummyMeals = [
   {
     title: 'Wiener Schnitzel',
     slug: 'wiener-schnitzel',
-    image: '/images/schnitzel.jpg',
-    summary: 'Crispy, golden-brown breaded veal cutlet, a classic Austrian dish.',
+    image:
+      'https://lu4zqq7exwahqzug.public.blob.vercel-storage.com/schnitzel-fk3kzw590kEOP4q4twVVZ8Ia0ZNj2T.jpg',
+    summary:
+      'Crispy, golden-brown breaded veal cutlet, a classic Austrian dish.',
     instructions: `
       1. Prepare the veal:
          Pound veal cutlets to an even thickness.
@@ -137,8 +149,10 @@ const dummyMeals = [
   {
     title: 'Fresh Tomato Salad',
     slug: 'fresh-tomato-salad',
-    image: '/images/tomato-salad.jpg',
-    summary: 'A light and refreshing salad with ripe tomatoes, fresh basil, and a tangy vinaigrette.',
+    image:
+      'https://lu4zqq7exwahqzug.public.blob.vercel-storage.com/tomato-salad-HKjA2FfNA7dAznR8a7utuOBLt8nU3d.jpg',
+    summary:
+      'A light and refreshing salad with ripe tomatoes, fresh basil, and a tangy vinaigrette.',
     instructions: `
       1. Prepare the tomatoes:
         Slice fresh tomatoes and arrange them on a plate.
