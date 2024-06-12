@@ -1,3 +1,4 @@
+import { Metadata } from 'next';
 import { Suspense } from 'react';
 import Link from 'next/link';
 
@@ -5,6 +6,11 @@ import styles from './page.module.css';
 import MealsGrid from '@/components/meals/meals-grid';
 import { getMeals } from '@/lib/meals';
 import { Meal } from '@/lib/definitions';
+
+export const metadata: Metadata = {
+  title: 'All meals',
+  description: 'Browse the delicious meals shared by our vibrant communiity.',
+};
 
 async function Meals() {
   const meals: Meal[] = await getMeals();
@@ -17,15 +23,20 @@ export default function MealsPage() {
     <>
       <header className={styles.header}>
         <h1>
-          Delicious meals, created <span className={styles.highlight}>by you</span>
+          Delicious meals, created{' '}
+          <span className={styles.highlight}>by you</span>
         </h1>
-        <p>Choose your favorite recipe and cook it yourself. It is easy and fun!</p>
+        <p>
+          Choose your favorite recipe and cook it yourself. It is easy and fun!
+        </p>
         <p className={styles.cta}>
           <Link href="/meals/share">Share Your Favorite Recipe</Link>
         </p>
       </header>
       <main>
-        <Suspense fallback={<p className={styles.loading}>Fetching meals...</p>}>
+        <Suspense
+          fallback={<p className={styles.loading}>Fetching meals...</p>}
+        >
           <Meals />
         </Suspense>
       </main>
