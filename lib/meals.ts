@@ -1,3 +1,4 @@
+import { put } from '@vercel/blob';
 import fs from 'node:fs';
 import sql from 'better-sqlite3';
 import slugify from 'slugify';
@@ -29,19 +30,23 @@ export async function saveMeal(meal: FormDataMeal) {
   const extension = meal.image.name.split('.').pop();
   const fileName = `${slug}.${extension}`;
 
-  const stream = fs.createWriteStream(`public/images/${fileName}`);
-  const bufferedImage = await meal.image.arrayBuffer();
-  stream.write(Buffer.from(bufferedImage), error => {
-    if (error) {
-      throw new Error('Saving image failed!');
-    }
+  // const stream = fs.createWriteStream(`public/images/${fileName}`);
+  // const bufferedImage = await meal.image.arrayBuffer();
+  // stream.write(Buffer.from(bufferedImage), error => {
+  //   if (error) {
+  //     throw new Error('Saving image failed!');
+  //   }
+  // });
+
+  const blob = await put(fileName, meal.image, {
+    access: 'public',
   });
 
   const newMeal: Omit<Meal, 'id'> = {
     ...meal,
     slug: slug,
     instructions: instructions,
-    image: `/images/${fileName}`,
+    image: blob.url,
   };
 
   db.prepare(
